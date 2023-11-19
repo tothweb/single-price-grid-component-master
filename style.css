@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    list-style: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container{
+    max-width: 640px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 10px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.first{
+    padding: 35px;
+}
+
+.row{
+    display: flex;
+}
+.right-box{
+    padding: 35px;
+    background-color: hsl(218, 22%, 67%);
+    color: #ffffff;
+    width: 50%;
+}
+
+.left-box{
+    padding: 35px;
+    background-color: hsl(179, 62%, 43%);
+    color: #ffffff;
+    width: 50%;
+}
+
+h1{
+    color: hsl(179, 62%, 43%);
+    font-size: 40px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+h3{
+    color: hsl(71, 73%, 54%);
+}
+
+p{
+    font-size: 16px;
+}
+
+.center-p{
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.big{
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.cyan{
+    color: hsl(179, 62%, 43%);
+}
+
+.btn{
+    height: 50px;
+    width: 100%;
+    background-color:hsl(71, 73%, 54%);
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 5px 10px 10px rgba(0,0,0,0.05);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    color: hsl(204, 43%, 93%);
+}
+
+@media screen and (max-width:576px) {
+.row{
+    display: block;
+}
+.left-box, .right-box{
+    width: 100%;
+}
+
+h1{
+    font-size: 25px;
+}
+h3{
+    font-size: 16px;
+}
+p, li{
+    font-size: 14px;
+}
+}
